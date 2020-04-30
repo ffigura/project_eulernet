@@ -12,7 +12,7 @@ import numpy as np
 val=[]
 
 for i in range(1000):
-    if np.mod(i,3)==0 or np.mod(i,5)==0:
+    if i %  3 == 0 or i % 5 == 0:
         val.append(i)
         
 print (np.sum(val))

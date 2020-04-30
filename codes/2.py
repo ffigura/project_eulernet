@@ -18,7 +18,7 @@ even=[2]
 
 while (aux<=4000000):
     aux=a+b
-    if np.mod(aux,2)==0:
+    if aux % 2 ==0:
         even.append(aux)
     a=b
     b=aux

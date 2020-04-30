@@ -9,18 +9,16 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 """
 
-import numpy as np
-
 a=1
 b=2
 aux=a+b
-even=[2]
+even=2
 
 while (aux<=4000000):
     aux=a+b
     if aux % 2 ==0:
-        even.append(aux)
+        even += aux
     a=b
     b=aux
 
-print (np.sum(even))
+print (even)
